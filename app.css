@@ -33,6 +33,7 @@ h5 {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
   border-radius: 100%;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .header:before {
@@ -40,8 +41,14 @@ h5 {
   width: 180px;
   height: 180px;
   background: var(--bg-color);
-  background-color: black;
+  /* background-color: black; */
   position: absolute;
   top: 0;
-  left: -200px;
+  left: -245px;
+  transform: skew(-50deg);
+  transition: all 0.6s ease-in-out;
+}
+
+.header:hover:before {
+  left: 245px;
 }
